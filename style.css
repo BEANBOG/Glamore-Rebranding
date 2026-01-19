@@ -8,12 +8,15 @@
     justify-content: center;
     align-items: center;
     height: 350px;
-    background-color: #d7bda6;
+    background-image: url('assets/logo-background-image.jpg');
+    background-size: cover; /* make background fill the area while preserving aspect */
+    background-position: center center; /* center the image */
+    background-repeat: no-repeat; /* prevent tiling */
 }
 
 .logo > img {
-    width: 400px;
-    height: 100%;
+    max-width: 90%;
+    height: auto; /* keep image aspect ratio and prevent overflow */
 }
 
 .website-buttons {
@@ -32,6 +35,9 @@
     border-radius: 8px;
     font-size: 16px;
     display: inline-block;
+    width: 220px; /* fixed width to match buttons-number */
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .button-facebook:hover {
@@ -46,9 +52,17 @@
     border-radius: 8px;
     font-size: 16px;
     display: inline-block;
+    width: 220px; /* fixed width to match button-facebook */
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .buttons-number:hover {
     background-color: #720194;
+}
+
+.placeholder-text {
+    color: #333;
+    font-size: 14px;
 }
 
